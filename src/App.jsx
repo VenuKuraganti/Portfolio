@@ -60,7 +60,7 @@ function App() {
             <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
 
             <a
-              href="/resume.pdf"
+              href="/public/resume.pdf"
               className="resume-link"
               target="_blank"
               rel="noopener noreferrer"
