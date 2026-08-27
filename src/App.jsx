@@ -60,7 +60,7 @@ function App() {
             <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
 
             <a
-              href="/public/resume.pdf"
+              href={`${import.meta.env.BASE_URL}resume.pdf`}
               className="resume-link"
               target="_blank"
               rel="noopener noreferrer"
