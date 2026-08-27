@@ -12,10 +12,15 @@
     width: 100%;
 
     padding: 60px 40px 0;
+   
 
-    box-sizing: border-box;
+   
 }
-
+@media (min-width: 1024px) {
+    .contact-container {
+        transform: translateX(-120px);
+    }
+}
 
 /* =========================================
    LEFT SECTION

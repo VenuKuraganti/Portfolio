@@ -469,18 +469,6 @@ section {
 
 }
 
-/* contact */
-.contact-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.contact-img {
-    width: 70%;
-    height: 70%;
-}
 
 /* footer */
 footer {
