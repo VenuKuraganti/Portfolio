@@ -1,0 +1,29 @@
+.swarm-cursor {
+  position: fixed;
+  inset: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.swarm-cursor__canvas {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  pointer-events: none;
+  user-select: none;
+}
+
+.swarm-cursor__content {
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+}

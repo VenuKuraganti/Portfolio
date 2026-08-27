@@ -1,0 +1,392 @@
+/* =========================================
+   CONTACT CONTAINER
+   ========================================= */
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 50px;
+
+    width: 100%;
+
+    padding: 60px 40px 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   LEFT SECTION
+   ========================================= */
+
+.contact-left {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-img {
+    width: 80%;
+    max-width: 500px;
+
+    height: auto;
+}
+
+
+/* =========================================
+   RIGHT SECTION
+   ========================================= */
+
+.contact-right {
+    flex: 1.2;
+
+    max-width: 600px;
+    width: 100%;
+
+    background: #bbb;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+}
+
+
+/* Heading */
+
+.contact-right h2 {
+    text-align: center;
+
+    margin-bottom: 10px;
+
+    color: #000;
+}
+
+
+/* Description */
+
+.contact-right p {
+    text-align: center;
+
+    font-size: 1.2rem;
+
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+
+    color: #000;
+}
+
+
+/* =========================================
+   FORM
+   ========================================= */
+
+.form-row {
+    display: flex;
+
+    gap: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 15px;
+
+    flex: 1;
+}
+
+
+/* Labels */
+
+label {
+    margin-bottom: 5px;
+
+    color: #000;
+
+    font-size: 15px;
+}
+
+label span {
+    color: red;
+}
+
+
+/* Inputs */
+
+input,
+textarea {
+    width: 100%;
+
+    border: 2px solid #000;
+
+    border-radius: 10px;
+
+    padding: 10px;
+
+    font-size: 1rem;
+
+    outline: none;
+
+    box-sizing: border-box;
+
+    font-family: inherit;
+}
+
+
+/* Textarea */
+
+textarea {
+    resize: none;
+
+    height: 120px;
+}
+
+
+/* Input focus */
+
+input:focus,
+textarea:focus {
+    border-color: #555;
+
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================================
+   SEND BUTTON
+   ========================================= */
+
+.send-btn {
+    display: block;
+
+    width: 100%;
+
+    background: #000;
+
+    color: #fff;
+
+    font-weight: 600;
+
+    border: none;
+
+    border-radius: 15px;
+
+    padding: 12px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.send-btn:hover {
+    background: #333;
+
+    transform: translateY(-2px);
+}
+
+.send-btn:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+
+/* =========================================
+   STATUS MESSAGE
+   ========================================= */
+
+.form-status {
+    margin-top: 15px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .contact-container {
+        gap: 30px;
+
+        padding: 50px 30px 0;
+    }
+
+    .contact-img {
+        width: 90%;
+    }
+
+    .contact-right {
+        padding: 25px;
+    }
+
+    .contact-right p {
+        font-size: 1rem;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .contact-container {
+        flex-direction: column;
+
+        width: 100%;
+
+        margin-left: 0;
+
+        padding: 30px 20px 0;
+
+        gap: 30px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* Contact image */
+
+    .contact-left {
+        width: 100%;
+    }
+
+    .contact-img {
+        width: 70%;
+
+        max-width: 300px;
+    }
+
+
+    /* Form */
+
+    .contact-right {
+        width: 100%;
+
+        max-width: 100%;
+
+        padding: 25px 20px;
+
+        border-radius: 18px;
+    }
+
+
+    .contact-right h2 {
+        font-size: 24px;
+    }
+
+
+    .contact-right p {
+        font-size: 0.95rem;
+
+        line-height: 1.5;
+    }
+
+
+    /* First name + last name */
+
+    .form-row {
+        flex-direction: column;
+
+        gap: 0;
+    }
+
+
+    .form-group {
+        width: 100%;
+    }
+
+
+    input,
+    textarea {
+        font-size: 16px;
+
+        padding: 12px;
+    }
+
+
+    textarea {
+        height: 120px;
+    }
+
+
+    .send-btn {
+        padding: 13px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .contact-container {
+        padding: 20px 15px 0;
+
+        gap: 20px;
+    }
+
+
+    .contact-img {
+        width: 75%;
+    }
+
+
+    .contact-right {
+        padding: 20px 15px;
+
+        border-radius: 15px;
+    }
+
+
+    .contact-right h2 {
+        font-size: 22px;
+    }
+
+
+    .contact-right p {
+        font-size: 0.9rem;
+
+        margin-bottom: 18px;
+    }
+
+
+    label {
+        font-size: 14px;
+    }
+
+
+    input,
+    textarea {
+        padding: 11px;
+
+        border-radius: 8px;
+    }
+
+
+    textarea {
+        height: 110px;
+    }
+
+
+    .send-btn {
+        border-radius: 12px;
+
+        padding: 12px;
+    }
+}

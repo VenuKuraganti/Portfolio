@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+body{
+    background: #000;
+    color: #fff;
+    font-family: "Bagel Fat One", system-ui;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
